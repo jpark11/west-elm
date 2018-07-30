@@ -1,6 +1,6 @@
 # Startup Notes 
 
-You 
+To see this coding challenge, simply open the index.html file.
 
 # West Elm Markup Challenge Instructions
 
