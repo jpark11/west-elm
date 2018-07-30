@@ -1,0 +1,166 @@
+    html {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        font-family: Arial;
+    }
+    
+    #header {
+        max-width: 1200px;
+    }
+    
+    #menulist {
+        font-size: 11px;
+        padding: 5px 0 5px 0;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        #menu-navi-div {
+            background-color: #323334;
+        }
+        #menu-home {
+            background-color: #2A375C;
+        }
+        .nav-link {
+            color: white;
+            text-align: center;
+        }
+        .nav-link.active {
+            background-color: #EAEAEA;
+        }
+    }
+    
+    #breadcrumb-div {
+        display: block;
+        nav {
+            ol {
+                background-color: white;
+                li {
+                    font-size: 10px;
+                    a {
+                        color: grey;
+                    }
+                }
+            }
+            ol.breadcrumb .breadcrumb-item::before {
+                content: ">";
+                color: grey;
+            }
+        }
+    }
+    
+    #product {
+        max-width: 1200px;
+        width: 100%;
+        margin-bottom: 50px;
+        #product-images {
+            width: 60%;
+            float: left;
+            #itemBigImage {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #itemThumbnails {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                img {
+                    cursor: pointer;
+                }
+            }
+        }
+        #product-info {
+            float: right;
+            width: 40%;
+            #itemInfo {
+                #itemTitle {
+                    font-size: 18px;
+                }
+                #itemDescription {
+                    font-size: 10px;
+                    color: grey;
+                }
+                #itemPrice {
+                    font-size: 24px;
+                }
+                input {
+                    display: block;
+                    margin: 10px 0 10px 0;
+                    text-align: center;
+                    opacity: 1;
+                    box-shadow: inset 0px 0px 0px 0px;
+                    width: 40px;
+                }
+                button {
+                    display: block;
+                    font-size: 13px;
+                    padding: 10px;
+                    margin: 10px 0 10px 0;
+                    background-color: red;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+        #itemCollapsibles {
+            a {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .boldHR {
+        border-width: 1px;
+        color: black;
+        background-color: black;
+    }
+    
+    #footerDiv {
+        clear: both;
+        padding: 30px 0 30px 0;
+        div {
+            border-top: 1px solid;
+            text-align: center;
+            background-color: #F0F1F2;
+            font-size: 10px;
+            color: grey;
+            padding: 10px;
+        }
+    }
+    
+    @media only screen and (max-width: 820px) {
+        #product {
+            max-width: none;
+            #product-images {
+                width: 100%;
+                #itemBigImage {
+                    img {
+                        width: 400px;
+                    }
+                }
+            }
+            #product-info {
+                float: none;
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+    
+    @media only screen and (max-width: 400px) {
+        #product {
+            max-width: none;
+            #product-images {
+                #itemBigImage {
+                    img {
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
