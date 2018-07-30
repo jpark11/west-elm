@@ -123,6 +123,10 @@ createProductContainer = (data) => {
 
     let addToCartButton = document.createElement("button");
     addToCartButton.setAttribute("id", "itemAddToCart");
+    addToCartButton.setAttribute("type", "button");
+    addToCartButton.setAttribute("class", "btn btn-primary");
+    addToCartButton.setAttribute("data-toggle", "modal");
+    addToCartButton.setAttribute("data-target", "#addToCartModal");
     addToCartButton.innerHTML = "ADD TO CART &#9654;";
 
     let beginningHr = document.createElement("hr");

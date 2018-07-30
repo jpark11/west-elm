@@ -1,4 +1,8 @@
-# West Elm Markup Challenge
+# Startup Notes 
+
+You 
+
+# West Elm Markup Challenge Instructions
 
 In this challenge you'll be building a webpage from scratch. Refer to the image titled `markup-challenge.jpg` while putting your page together. Feel free to use the images provided, or use your own optimized images. Dazzle us with your HTML, CSS, and JavaScript skills by
 
